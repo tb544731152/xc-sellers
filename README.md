@@ -1,4 +1,3 @@
-# Crowd_funding
 
 ## Project setup
 ```
