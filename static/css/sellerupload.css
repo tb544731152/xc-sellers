@@ -1,0 +1,408 @@
+
+.wrap{
+	width: 100%;
+	background: url('../image/retail_terminal/retail_terminal9.jpg');
+	background-size:cover;
+	padding: 0.4rem 0;
+  }
+  .licenseNumBox,.list{
+	width: 88%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #fff;
+	padding: 0.4rem 2%;
+	border-radius: 0.15625rem;
+	margin:0  auto 0.4rem auto;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	position: relative;
+  }
+  .list label{
+	 color: #333333;
+	width: 2rem;
+	display: inline-block;
+	margin-right: 0.1rem;
+	font-size: 12px;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	float: left;
+  }
+  .list textarea{
+	line-height: 0.8rem;
+  }
+  .area{
+	height: 1.1rem !important;
+  }
+  .add{
+	height:3rem !important;
+  }
+  .tel{
+	width: 47% !important;
+  }
+  .info{
+	width: 92%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #fff;
+	overflow: hidden;
+	margin:0  auto 0.4rem auto;
+	border-radius: 0.15625rem;
+  }
+  .info ul li{
+	padding: 0.5rem 0%;
+	border-bottom: 1px solid #fff;
+	margin: 0 2%;
+	position: relative;
+	line-height: 0.8rem;
+  }
+  .info ul li label{
+	color: #333333;
+	width: 2rem;
+	display: inline-block;
+	margin-right: 0.1rem;
+	font-size: 12px;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	float: left;
+  }
+  .info ul li input{
+	width: 70%;
+   line-height: 0.8rem;
+  }
+  .info textarea{
+	line-height: 0.8rem;
+  }
+  .info ul li:last-child{
+	border: none;
+  }
+  .info1 ul li:last-child{
+	height: 1.4rem;
+	overflow:hidden;
+  }
+  .info ul li input::-webkit-input-placeholder{
+	color: #777777;
+	font-size: 14px;
+  }
+  .top{
+	width: 92%;
+	height: 4.9375rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #fff;
+	margin: 0.4rem auto;
+	overflow-y: hidden;
+	position: relative;
+  }
+  
+  .top img.old_pic{
+	width: 100%;
+	
+  }
+  .top p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 0.7rem;
+	color: #000;
+  }
+  .top p .red{
+	color: #de3535;
+  }
+  .upload{
+	position:absolute;
+	left:41%;
+	top:30%;
+	width: 1.71875rem;
+	height: 1.71875rem;
+  }
+   .files{
+	width: 1.71875rem;
+	height: 1.71875rem;
+	cursor:pointer;
+	opacity:0; 
+	z-index: 3;
+   } 
+   .btn{
+	width: 86%;
+	height: 1.0625rem;
+	line-height: 1.0625rem;
+	font-size: 16px;
+	color: #fff;
+	background-color: #49c13c;
+	text-align: center;
+	margin: 0 auto 0.2rem auto;
+   }
+	.text {
+	  width: 86%;
+	  margin: 0 auto;
+	  height: 50%;
+	  overflow-y: scroll;
+	  -webkit-overflow-scrolling : touch;  
+	}
+   .text h2{
+	text-align: center;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+	line-height: 1.5625rem;
+   }
+	.text p{
+	  line-height: 0.6rem;
+	  margin-bottom: 0.1rem;
+	  color: #fff;
+	  font-size: 12px;
+	}
+	.files1{
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  width: 2.25rem;
+	  height: 2.25rem;
+	  opacity: 0;
+	}
+	.agin_upload{
+	  width: 2.25rem;
+	  height: 2.25rem;
+	  background: url('../image/retail_terminal/retail_terminal8.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: none;
+	top: none;
+	bottom: 0 !important;
+	right: 0 !important;
+	}
+	 .agin_upload .files{
+	  width: 2.25rem;
+	  height: 2.25rem;
+	 }
+	.box2{
+	  width: 100%;
+	height: 4.9375rem;
+	overflow: hidden;
+	}
+	.new_pic{
+	  width: 100%;
+	}
+	/*身份证上传*/
+  .papers{
+	width: 92%;
+	height:4.9375rem;
+	margin: 0 auto;
+	border: 1px solid #fff;
+	margin-bottom: 0.3125rem;
+	padding:0 0.3125rem;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.5);
+  }
+  .title h1{
+	color: #353535;
+	font-size: 14px;
+	margin: 0.3125rem 0 0.109375rem 0;
+  }
+  .title p{
+	color: #de3535;
+	color: 12px;
+	margin-bottom: 0.390625rem;
+  }
+  .pic_l{
+	position: relative;
+	width: 4.0625rem;
+	height: 2.65625rem;
+	float: left;
+	margin-right: 0.3125rem;
+  }
+  .old_pic1{
+   height: 100%;
+   width: 100%;
+  
+  }
+  .new_pic1{
+	height: 100%;
+	width: 100%;
+  }
+  .pic_r{
+	position: relative;
+	width: 4.0625rem;
+	height: 2.65625rem;
+	float: left;
+  }
+  .pic_r img{
+	width: 100%;
+	height: 100%;
+  }
+  .files2{
+	  position: absolute;
+	  top:0;
+	  right: 0;
+	  width: 4.0625rem;
+	  height: 2.65625rem;
+	  opacity: 0;
+  }
+  .box2{
+	 height: 2.65625rem;
+	 width: 4.0625rem;
+  }
+  .shadow{
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.6);
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  z-index: 666;
+  }
+  .example{
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  z-index: 667;
+  }
+  .example img{
+	  width: 0.484375rem;
+	  height: 0.484375rem;
+  
+  }
+  .example p:nth-child(1){
+	padding: 0.859375rem 0 0.15625rem 0;
+  }
+  .example p{
+	color: #fff;
+	width: 3.125rem;
+	margin: 0 auto;
+	text-align: center;
+  }
+  .big_pic{
+	width: 100%;
+	height: 6.5625rem;
+	z-index: 9999;
+	position: fixed;
+	top: 5.625rem;
+	left: 0;
+	display: none;
+  }
+  .big_pic img{
+	width: 100%;
+	height: 100%;
+  }
+  .mask3{
+	  width: 100%;
+	  height: 100%;
+	  background: rgba(0, 0, 0, 0.6);
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  display: none; 
+	  z-index: 6666;
+  }
+  .save{
+	width: 92%;
+	height: 1.0625rem;
+	background: #38bc26;
+	margin:0 auto 0.3125rem auto;
+  }
+  .save p{
+	height: 1.0625rem;
+	line-height: 1.0625rem;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+  }
+  /*身份证上传*/
+	.address{
+	  background: url('../image/retail_terminal/icon7.png') no-repeat right center;
+	  background-size: 0.46875rem 0.71875rem;
+	  width: 55% !important;
+  
+	}
+	
+	.code_btn{
+	  width: 2.3rem !important;
+	  background: #fff;
+	  line-height: 0.8rem;
+	  border-radius: 0.15625rem;
+	  height: 0.8rem;
+	  color: #444444;
+	}
+	.map{
+	  position:absolute;
+	  top: 0.1rem;
+	  right: 0.1rem;
+	  width: 1.6rem;
+	}
+	.map img{
+	  width: 0.78125rem;
+	  height: 1.0rem; 
+	  margin: 0 0.4rem;
+	}
+	.map p{
+	  font-size: 12px;
+	  color: #000;
+	  text-align: center;
+  
+	}
+	.tips{
+	  width: 92%;
+	  line-height: 0.5rem;
+	  color: #f00;
+	  margin:0 auto;
+	  margin-bottom: 0.2rem;
+	}
+	.rule{
+	  text-align: center;
+	  color: #f14bf3;
+	  margin-bottom: 0.4rem;
+	  font-size: 16px;
+	  text-decoration: underline;
+	}
+  
+	.q_survey_box{
+	width: 8.6rem;
+	height: 10rem;
+	border-radius: 8px;
+	background-color: #f3f3f3;
+	position: absolute;
+	top: 50%; 
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: -5rem;
+	z-index: 7777;
+	display: none;
+  }
+  .q_survey_box .q_close1{
+	width: 0.46875rem;
+	height: 0.46875rem;
+	  margin:0.3rem 0 0.6rem 7.6rem;
+  }
+  .q_survey_box .q_close1 img{
+	 width: 0.46875rem;
+	 height: 0.46875rem;  
+	
+  }
+  .q_survey_box ol{
+	height: 8rem;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling : touch;  
+  }
+  .q_survey_box  ol li{
+	padding: 0 0.3rem;
+	font-size: 14px;
+	color: #5eb7a5;
+	line-height: 0.546875rem;
+	margin-bottom: 0.2rem;
+  }
+  
+  .uoloading_box{
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -2rem;
+	text-align: center;
+	width: 100%;
+	z-index: 7777;
+	display: none;
+  }

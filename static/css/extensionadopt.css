@@ -1,0 +1,282 @@
+.wrap{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../image/retail_terminal/retail_terminal1.jpg') no-repeat;
+	background-size: cover;
+	 display: box; 
+	 box-orient: vertical;
+     display: -webkit-box; 
+	 -webkit-box-orient: vertical;
+}
+.help {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 6666;
+}
+header{
+	height: 0.875rem;
+	line-height: 0.875rem;
+	text-align: center;
+	margin: 0.5rem 0 !important;
+	position: relative;
+}
+header p{
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+header img{
+	width: 100%;
+}
+.left,.right{
+	position: absolute;
+	top: 0;
+}
+.left{
+	width: 0.9375rem;
+	height: 0.875rem;
+	left: 0.3rem;
+}
+.left span{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url('../image/retail_terminal/red_dot1.png') no-repeat;
+	display: inline-block;
+	background-size:cover;
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+}
+.left a{
+	display: inline-block;
+	width: 0.9375rem;
+	height: 0.875rem;
+}
+.right{
+	width: 0.71875rem;
+	line-height: 0.71875rem;
+	right: 0.3rem;
+}
+
+.img{
+	width: 100%;
+}
+.img img{
+   width: 100%;	
+}
+.nav{
+	height: 0.6875rem;
+	line-height: 0.6875rem;
+	padding: 0rem 12%;
+}
+.nav p{
+	/* background-size: 0.6875rem;
+	padding-left: 0.78125rem; */
+	font-size: 16px;
+	color: #c8c8c8;
+	border: 1px solid #b0bdb1;
+	color: #b0bdb1;
+	text-align: center;
+	margin: 0 2%;
+}
+.nav p.on{
+	/*  background-size: 0.6875rem;
+	 color: #46d433;	 */
+	 border: 1px solid #fff;
+	 color: #fff;
+ }
+ .content{
+	width: 6.5rem;
+	height: 10.71875rem;
+	margin: 0.5rem auto;
+	
+	
+}
+.box1{
+	position: absolute;
+	width: 6.5rem;
+	height: 10.71875rem;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: none;
+	margin-top: -5.359375rem;
+	
+}
+.box1 img{
+	width: 100%;
+}
+
+.box2{
+	display: none;
+	margin: 0.25rem;
+	height: 10.21875rem;
+}
+.business_grade{
+	width: 6rem;
+	margin: 0 auto;
+}
+.business_grade h2{
+	font-size: 14px;
+	margin: 0.3rem 0;
+	color: #fff;
+	height: 0.625rem;
+	line-height: 0.625rem;
+}
+.business_grade h2 span{
+	display: block;
+	float: left;
+	width: 0.65625rem;
+	height: 0.65625rem;
+	background: url('../image/retail_terminal/icon6.png') no-repeat;
+	background-size: cover;
+	margin-right: 0.1rem;
+}
+.business_grade h2 span.on{
+	background: url('../image/retail_terminal/icon6_on.png') no-repeat;
+	background-size: cover;
+}
+.business_grade h2 em{
+	font-style: normal;
+}
+.business_grade h2 label{
+	font-size: 18px;
+	color: #fff;
+}
+.grade{
+	height: 1.09375rem;
+	padding:0.3125rem 0;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin-top: 0.2rem;
+}
+.grade div{
+	width: 33%;
+}
+.left_div{
+	border-right: 1px solid #fff;
+}
+.grade p{
+	line-height: 0.546875rem;
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+}
+.code_box{
+	height: 6.825rem;
+    position: absolute;
+    width: 100%;
+    top: 1.8rem;
+
+}
+.activity{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1.9375rem;
+	height: 1.9375rem;
+}
+.activity img{
+	width: 1.9375rem;
+	height: 1.9375rem;
+}
+ .code_img{
+	margin: 0 auto;
+	width: 5.625rem;
+	height: 5.625rem;
+}
+ .code_img img{
+	width: 5.625rem;
+	height: 5.625rem;
+
+}
+.box2 h3{
+	color: #fff;
+	font-size: 14px;
+	margin: 0.2rem 0;
+}
+.code_box p{
+	line-height: 0.6rem;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+}
+.btn{
+	height: 1.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+	background-color: #fff45c;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: 14px;
+}
+.btn a{
+	color: #ff0000;
+}
+
+.q_survey_box{
+  width: 8.6rem;
+  height: 10rem;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: -5rem;
+  z-index: 7777;
+}
+.q_survey_box .q_close1{
+  width: 0.46875rem;
+  height: 0.46875rem;
+    margin:0.3rem 0 0.6rem 7.6rem;
+}
+.q_survey_box .q_close1 img{
+   width: 0.46875rem;
+   height: 0.46875rem;  
+  
+}
+.q_survey_box ol{
+  height: 8rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling : touch;  
+}
+.q_survey_box  ol li{
+  padding: 0 0.3rem;
+  font-size: 14px;
+  color: #5eb7a5;
+  line-height: 0.546875rem;
+  margin-bottom: 0.2rem;
+}
+.tab1{
+	overflow: hidden;
+	border-bottom: 0.3125rem solid #f5f5f9;
+}
+.tab2{
+		  -webkit-box-flex: 1; 
+    box-flex: 1;
+    background-color: #fff;
+    border-top: 1px solid #dddddd;
+    position: relative;
+}
+.agreement{
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+	height: 1rem;
+	font-size: 14px;
+}
+.blue{
+	color: #0000ff;
+}
