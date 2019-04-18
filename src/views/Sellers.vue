@@ -124,7 +124,8 @@ var openId;
 export default {
   data() {
     return {
-		images: []
+		images: [],
+        openId:''
     }
   },
   created(){
@@ -132,8 +133,9 @@ export default {
   },
   methods: {
   	get(){
-		   openId=this.$route.query.openId;
-		   console.log(openId);
+		  const token = window.localStorage.getItem('token')
+          var that = this;
+          that.openId = token;
 	  }
   },
   mounted(){

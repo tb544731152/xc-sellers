@@ -6,7 +6,8 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import axios from 'axios'
 import { Lazyload } from 'vant';
-
+import { Area } from 'vant';
+Vue.use(Area);
 // options 为可选参数，无则不传
 Vue.use(Lazyload);
 Vue.prototype.$http = axios

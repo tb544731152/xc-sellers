@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import VueScroller from "vue-scroller"
 import store from './store'
 Vue.use(VueScroller);
-
 Vue.use(Router)
 
 const router = new Router({
@@ -59,7 +58,6 @@ router.beforeEach((to, from, next) => {//beforeEach是router的钩子函数，�
   }
   // 第一次访问
   const token = window.localStorage.getItem('token')
-
   if (!token && to.path !== '/author') {
     // 保存用户进入的url
     console.log(to.fullPath)

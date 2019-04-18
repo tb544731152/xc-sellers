@@ -24,7 +24,7 @@ export default {
   },
   methods: {
   	get(){
-		   openId=this.$route.query.openId;
+		   openId=window.localStorage.getItem('token');
 		   //查询此人是否审核通过
        from = this.$route.query.from;
        var that=this;
@@ -33,13 +33,27 @@ export default {
             console.log(res.data.data);
             if(res.data.code==1000){
                 if(res.data.data.status=='1'){
-                 that.$router.push({path: '/extensionadopted', query: {openId:openId}});
+                 that.$router.push({path: '/extensionadopted'});
                 }
             }else{
-                that.$router.push({path: '/extension', query: {openId:openId}});
+                that.$router.push({path: '/extension'});
             }
         });
        }
+
+      if(from=='1'){
+        that.$http.get('/api/sellers/query?openId='+openId).then(function(res){
+            console.log(res.data.data);
+            if(res.data.code==1000){
+                if(res.data.data.status=='1'){
+                 that.$router.push({path: '/sellers'});
+                }
+            }else{
+                that.$router.push({path: '/sellersupload'});
+            }
+        });
+       }
+
 	  }
   }
 }

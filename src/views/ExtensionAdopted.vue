@@ -51,10 +51,8 @@
         <div class="q_survey_box"  v-show="ishelp">
             <p class="q_close1"><img src="../../static/image/retail_terminal/retail_close.png" @click="close()" alt="placeholder+image"></p>
             <ol>
-                <li>1 手持推广码对应商家扫码-注册-支付服务使用费，您即可得20-50元。</li>
-                <li>2 商家类型
-                        <p>餐馆</p>
-                        <p>饭店</p>
+                <li>一 餐馆入驻新创[易点餐]平台,并支付完成服务使用费，即为邀请入驻成功！</li>
+                <li>二 入驻成功后邀请人即可得20 元- 50 元 随机红包（发放到个人中心钱包）！
                 </li>
                 <li>3 活动时间：长期有效。</li>
                 <li>4 如有任何问题请反馈至新创追溯客服。联系电话：15210785738</li>        
@@ -90,9 +88,9 @@ export default {
   		this.ishelp=true;
   	},
   	get(){
-		   openId=this.$route.query.openId;
+		   openId=window.localStorage.getItem('token');
 		   var that=this;
-           that.$http.get('/api/extension/query/'+openId).then(function(res){
+           that.$http.get('/api/extension/query?openId='+openId).then(function(res){
             if(res.data.code==1000){
                 if(res.data.data.status=='0'){
                  that.$router.push ({path: '/audit', query: {openId:openId,from:'0'}});

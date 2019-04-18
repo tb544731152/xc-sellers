@@ -56,18 +56,17 @@
 <script>
 import '../../static/js/jquery-1.10.2.js';
 import Vue from 'vue'
-var openId;
 export default {
   data() {
     return {
-        photo:"http://127.0.0.1:8888/static/image/retail_terminal/photo.png",
+        photo:"http://127.0.0.1:8080/static/image/retail_terminal/photo.png",
 		images: [],
         username:'',
         idcardnum:'',
         tel:'',
         codename:'',
-        uploadimg:''
-
+        uploadimg:'',
+        openId:''
 
     }
   },
@@ -77,24 +76,34 @@ export default {
   methods: {
     sure_btn(){
         var that = this;
-        openId=this.$route.query.openId;
-
         let data = {
             "name":this.username,
             "idCardNum":this.idcardnum,
             "idCardImg":this.photo,
             "phone":this.tel,
-            "openId":openId
+            "openId":this.openId,
+            
         };
-        that.$http.post('/api/extension/save?sid=123&code='+this.codename, data).then(function(res){
+        that.$http.post('/api/extension/save?openId='+this.openId+'&code='+this.codename, data).then(function(res){
             if(res.data.code==1000){
-                that.$router.push ({path: '/audit', query: {openId:openId,from:'0'}});
+                that.$router.push ({path: '/audit', query: {from:'0'}});
             }
         });
     },
   	get(){
-		   openId=this.$route.query.openId;
-		   console.log(openId);
+		const token = window.localStorage.getItem('token')
+        var that = this;
+        that.openId = token;
+        var that=this;
+        that.$http.get('/api/extension/query?openId='+this.openId).then(function(res){
+            if(res.data.code==1000){
+                if(res.data.data.status=='1'){
+                 that.$router.push({path: '/extensionadopted'});
+                }
+            }else{
+                that.$router.push({path: '/extension'});
+            }
+        });
 	},
     changeImage: function(e){
             var that = this;
@@ -102,7 +111,7 @@ export default {
             var formFile = new FormData();
         	formFile.append("file", file);
             $.ajax({
-                url: 'http://127.0.0.1:8080/upload/image/123',
+                url: 'http://127.0.0.1:8080/upload/image?openId='+this.openId,
                 type: 'POST',
                 dataType: 'json',
                 cache: false,
